@@ -5,7 +5,10 @@
   font-variation-settings:
     "wdth" 100;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     max-width: 100%;
     overflow-x: hidden;
@@ -244,6 +247,25 @@ nav{
     gap: 20px;
     
 }
+.story-btn{
+
+    text-align: center;
+    padding-bottom: 70px;
+
+
+}
+.story-btn > button {
+    padding: 15px 40px;
+    border-radius: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
 .story-left{
     border-radius: 16px;
     background-color: white;
@@ -334,5 +356,79 @@ nav{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
     }
+    .story-btn > button {
+        padding: 15px 40px;
+        border-radius: 16px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+
+    }
     
+}
+footer{
+    background-color: #01ACFD;
+}
+.footer-sec{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    width: 80vw;
+    margin: 0 10vw;
+    padding: 140px 20px;
+    
+}
+.kids{
+    display: flex;
+    
+}
+.kids > p{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+.logo-body{
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 20px;
+}
+.about-scl{
+    margin-left: 70px;
+}
+
+.about-scl >div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap :10px
+
+    
+}
+.about-scl >p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.about-scl >div >a{
+    text-decoration: none;
+    color: white;
+}
+.about-scl > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+
+.touch > p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.touch > div{
+    margin-top: 30px;
 }
