@@ -194,12 +194,29 @@ nav{
 .more{
     color: #F0AA00;
 }
+.arrow{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.arrow > button{
+    background-color: #F0AA00;
+    border-radius: 30px;
+    border: none;
+    
+}
+
+.arrow > button > img{
+    size: 15px 24px;
+}
 
 @media screen and (max-width: 576px) {
     .standard{
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 94vw;
         margin: 20px auto;
         align-items: center;
         gap: 30px;
@@ -211,4 +228,111 @@ nav{
         text-align: center;
         font-size: 3.87vw;
     }
+    .arrow{
+        display: none;
+    }
+}
+.story{
+    
+    background: url(assets/bg.png) , linear-gradient(to top, rgba(254, 163, 1, 0.3), white, transparent 80%);
+    
+}
+
+.story-right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    
+}
+.story-left{
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid white;
+}
+.story-left> img{
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.story-left > p{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.title2{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.body{
+    font-weight: regular;
+}
+.story-left> button{
+    padding: 15px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3CD8E8;
+    font-weight: regular;
+    color: white;
+    position: absolute;
+    bottom: 200px;
+    left: 20px ;
+    
+}
+.story-left{
+    position: relative;
+    box-shadow: 4px 4px #F0AA00;
+    width: 70%;
+    
+    
+}
+.story-content{
+    max-width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 60px;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+.story-right > div{
+    border-radius: 16px;
+    background-color: white;
+    position: relative;
+    box-shadow: 4px 4px #F0AA00;
+}
+.story-right >div > img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+} 
+.story-right > div > button {
+    padding: 15px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3CD8E8;
+    font-weight: regular;
+    color: white;
+    position: absolute;
+    bottom: 75px;
+    left: 15px ;
+}
+
+.story-right > div > p{
+    font-weight: 400;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .story-left{
+        display: none;
+    }
+
+    .story-right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    
 }
