@@ -417,12 +417,6 @@ footer{
     text-decoration: none;
     color: white;
 }
-.about-scl > ul > li > a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.25rem;
-}
-
 
 .touch > p{
     font-size: 1.5rem;
@@ -431,4 +425,14 @@ footer{
 }
 .touch > div{
     margin-top: 30px;
+}
+@media screen and (max-width: 576px) {
+   .footer-sec{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   }
+   .about-scl{
+    margin-left: 0;
+   }
 }
